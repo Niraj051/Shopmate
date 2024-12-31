@@ -1,0 +1,18 @@
+.carts{
+    max-width: 1280px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    text-align: start;
+   justify-content: space-between;
+   padding: 6px;
+   border: 1px solid black;
+   margin: 10px;
+}
+.carts img{
+    width: 100%;
+    height: 89px;
+}
+.carts h1{
+    width: 500px;
+}

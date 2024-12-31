@@ -1,0 +1,17 @@
+.productcart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+   
+    
+    
+    
+}
+@media only screen and (min-width:1139px) {
+    .productcart{
+        display: flex;
+        justify-content: start;
+    }
+    
+}
