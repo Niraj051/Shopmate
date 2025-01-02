@@ -16,3 +16,9 @@
 .carts h1{
     width: 500px;
 }
+.carts button{
+    background-color: red;
+    color:whitesmoke;
+    padding: 5px;
+    font-size: large;
+}

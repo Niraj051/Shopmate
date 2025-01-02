@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Card.css"
+import { useCart } from '../context/Cartcontext';
 
 export const Card = ({data}) => {
+  const {removeFromCart}=useCart();
     const {name,price,image}=data;
   return (
     <section>
@@ -11,8 +13,8 @@ export const Card = ({data}) => {
             </div>
             
             <h1>{name}</h1>
-            <p>{price}</p>
-            <button>Remove</button>
+            <p>${price}</p>
+            <button onClick={()=>removeFromCart(data)}>Remove</button>
             
         </div>
     </section>

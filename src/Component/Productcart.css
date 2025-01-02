@@ -36,6 +36,14 @@
     text-align: center;
     padding-top: 10px;
 }
+.ProductCard .par{
+    max-width: 250px;
+    
+    
+    margin: 10px 4px;
+    
+    min-height: 73px;
+}
 .card {
     display: flex;
     justify-content: space-between;
@@ -45,8 +53,21 @@
 .card p{
     text-align: center;
     font-size: 18px;
+    
 }
 .card .buttons{
     padding: 5px;
+    background-color: rgb(12, 12, 143);
+    color:whitesmoke;
+    font-size: large;
+    border-radius: 5px;
+    
+}
+.card .removecart{
+    background-color: red;
+    color:whitesmoke;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
     
 }

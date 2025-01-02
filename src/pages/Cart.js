@@ -5,20 +5,19 @@ import { useTitle } from '../hooks/useTitle';
 
 import { Card } from '../Component/Card';
 import "./Cart.css"
+import { useCart } from '../context/Cartcontext';
 
 export const Cart = () => {
+  const {total,cartList}=useCart();
   
-    const datas=[{"id":1,"name":"Sony Wh-Ch510 Bluetooth Wireless","price": "$149" , "image": "images/1001.png"},
-        {"id": 2, "name": "boAt Rockerz 450", "price": "$49", "image": "images/1002.png"},
-        
-     ]
+    
      useTitle("Home");
       return (
         <main>
           <div className="cartsproduct">
-            <p>Cart: {datas.length}</p>
+            <p>Cart: {cartList.length}/{total}</p>
           {
-            datas.map((data)=>(
+            cartList.map((data)=>(
               <Card key={data.id} data={data} />
             ))
           }
