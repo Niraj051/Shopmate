@@ -26,7 +26,7 @@ export const Productcart = ({data}) => {
         <img src={data.image} alt="placeholder" />
         <p className="par">{data.name}</p>
         <div className="card">
-            <p>{data.price}</p>
+            <p>${data.price}</p>
             {state?(<button className="removecart" onClick={()=>removeFromCart(data)} >remove</button>):(<button onClick={()=>addToCart(data)} className="buttons">Addto card</button>)}
         </div>
 
